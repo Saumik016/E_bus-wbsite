@@ -1,0 +1,71 @@
+<!-- book.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Bus Seat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bus-details {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .seats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .seat {
+      width: 50px;
+      height: 50px;
+      background: #eee;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .seat.selected {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .seat.booked {
+      background-color: #dc3545;
+      color: white;
+      cursor: not-allowed;
+    }
+
+    #confirm-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Book Your Seat</h2>
+  </header>
+
+  <main>
+    <div class="bus-details" id="bus-info">
+      Loading bus details...
+    </div>
+
+    <div class="seats-grid" id="seat-grid">
+      <!-- Seat buttons will be generated here -->
+    </div>
+
+    <button id="confirm-btn">Confirm Booking</button>
+  </main>
+
+  <script type="module" src="js/book.js"></script>
+</body>
+</html>

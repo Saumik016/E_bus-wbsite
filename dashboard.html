@@ -1,0 +1,44 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>e-Bus Management</h1>
+    <button id="logout-btn">Logout</button>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>Search Buses</h2>
+      <form id="search-form">
+        <input type="text" id="source" placeholder="Enter Source" required />
+        <input type="text" id="destination" placeholder="Enter Destination" required />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="results-section">
+      <h2>Available Buses</h2>
+      <div id="bus-results" class="bus-list">
+        <!-- Results will appear here -->
+      </div>
+    </section>
+    <!-- Booking History Section -->
+<section class="history-section">
+  <h2>Your Bookings</h2>
+  <div id="booking-history" class="bus-list">
+    <!-- User's bookings will appear here -->
+  </div>
+</section>
+
+  </main>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>e-Bus Management</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 🔷 Navigation -->
+  <nav class="navbar">
+    <div class="logo">eBus</div>
+    <ul class="nav-links">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🟢 Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Book Buses with Ease</h1>
+      <p>Find buses between cities and travel comfortably.</p>
+      <a href="login.html" class="btn">Start Booking</a>
+    </div>
+  </header>
+
+  <!-- 🔎 Search Section -->
+  <section class="search-area">
+    <h2>Search for Buses</h2>
+    <form id="home-search-form">
+      <input type="text" id="source" placeholder="Source City" required />
+      <input type="text" id="destination" placeholder="Destination City" required />
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- ✨ Features Section -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Real-time Updates</h3>
+        <p>Get instant updates on bus availability and seats.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy Booking</h3>
+        <p>Book your seat in just a few clicks, anytime.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure Payments</h3>
+        <p>Safe and reliable payment integration (Coming Soon).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 Contact CTA -->
+  <section class="cta">
+    <h2>Have Questions?</h2>
+    <p>Contact us at support@ebus.com or call 1800-123-456</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 e-Bus Management System</p>
+  </footer>
+
+  <script>
+    document.getElementById("home-search-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Please login to search and book buses.");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

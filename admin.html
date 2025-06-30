@@ -1,0 +1,67 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - eBus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .admin-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .admin-container h2 {
+      text-align: center;
+    }
+
+    form input, form button {
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .bus-list .bus-card {
+      position: relative;
+    }
+
+    .bus-card button {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Admin Dashboard</h2>
+    <button id="logout-btn">Logout</button>
+  </header>
+
+  <div class="admin-container">
+    <section>
+      <h3>Add New Bus</h3>
+      <form id="add-bus-form">
+        <input type="text" id="source" placeholder="Source" required />
+        <input type="text" id="destination" placeholder="Destination" required />
+        <input type="time" id="departureTime" required />
+        <input type="number" id="price" placeholder="Price" required />
+        <input type="number" id="totalSeats" placeholder="Total Seats" required />
+        <button type="submit">Add Bus</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>All Buses</h3>
+      <div id="bus-list" class="bus-list"></div>
+    </section>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
