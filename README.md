@@ -87,7 +87,7 @@ const firebaseConfig = {
 
 **Saumik Ambade**  
 🎓 Final Year B.Tech CSE Student  
-📧 [your-email@example.com](mailto:your-email@example.com)
+📧mailto:saumikambade2@gmail.com
 
 ---
 
@@ -100,4 +100,4 @@ MIT License. Free to use, modify and distribute.
 ## ⭐ Support
 
 If you liked this project, leave a ⭐ on the repo and share it with others!
-ng README_EBUS.md…]()
+
