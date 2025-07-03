@@ -2,7 +2,7 @@
 
 E-Bus Management System is a web-based application designed to provide an intuitive interface for users to search for electric buses between cities and for admins to manage bus data. It uses HTML, CSS, JavaScript, and Firebase for data storage and dynamic content rendering.
 
-![E-Bus Screenshot](https://cdn.dribbble.com/users/1338391/screenshots/15309124/media/9a5d7e7fe614ef00f19e2ea2eafcb3f9.png)
+
 
 ---
 
@@ -31,12 +31,12 @@ e-bus-management-system/
 
 ## 📚 Features
 
-- 🔍 Search E-buses by source and destination
-- 🛠 Admin panel for bus entry and updates
-- ⚡ Smooth and responsive design
-- 🎨 UI built with modern CSS and animations
-- 🔗 Firebase ready (add your config)
-- 📦 Modular file structure
+-  Search E-buses by source and destination
+-  Admin panel for bus entry and updates
+-  Smooth and responsive design
+-  UI built with modern CSS and animations
+-  Firebase ready (add your config)
+-  Modular file structure
 
 ---
 
