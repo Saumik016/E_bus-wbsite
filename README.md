@@ -1,74 +1,103 @@
 # 🚌 E-Bus Management System
 
-E-Bus Management System is a modern, user-friendly web application designed to allow users to search, view, and manage buses between source and destination locations. Built with HTML, CSS, JavaScript, and Firebase, it supports both user and admin interfaces.
+E-Bus Management System is a web-based application designed to provide an intuitive interface for users to search for electric buses between cities and for admins to manage bus data. It uses HTML, CSS, JavaScript, and Firebase for data storage and dynamic content rendering.
+
+![E-Bus Screenshot](https://cdn.dribbble.com/users/1338391/screenshots/15309124/media/9a5d7e7fe614ef00f19e2ea2eafcb3f9.png)
 
 ---
 
-## 📌 Features
-
--  Search buses based on source and destination
--  View route, time, and seat availability
--  User-side interface with booking simulation
--  Admin panel to add, update, or delete buses
--  Firebase integration for real-time data storage
--  Fast and responsive user experience
--  Stylish, modern UI with animations and transitions
 
 ---
 
-## 🛠 Technologies Used
+## 📁 Project Structure
 
-- HTML5, CSS3, JavaScript (Vanilla JS)
-- Firebase (Firestore, Realtime Database)
-- Google Fonts & Icons
-- Responsive layout using Flexbox/Grid
-
----
-
-## 📁 Folder Structure
-
-e-bus-management/
-├── index.html # Homepage - search buses
-├── admin.html # Admin dashboard
+```
+e-bus-management-system/
+├── index.html
+├── admin.html
 ├── css/
-│ └── style.css # Styling and animations
+│   └── style.css
 ├── js/
-│ ├── main.js # User-side logic
-│ └── admin.js # Admin-side logic
-├── assets/
-│ └── images/ # Icons and assets
+│   ├── main.js
+│   └── admin.js
 ├── firebase/
-│ └── firebase-config.js # Firebase initialization
-└── README.md
+│   └── firebase-config.js
+├── assets/
+│   └── images/
+├── README.md
+```
 
 ---
 
-## 🔧 Setup & Usage
+## 📚 Features
 
-1. Clone the repository:
+- 🔍 Search E-buses by source and destination
+- 🛠 Admin panel for bus entry and updates
+- ⚡ Smooth and responsive design
+- 🎨 UI built with modern CSS and animations
+- 🔗 Firebase ready (add your config)
+- 📦 Modular file structure
+
+---
+
+## 🔧 Technologies Used
+
+- HTML5, CSS3, JavaScript (Vanilla)
+- Firebase (Realtime/Firestore Database)
+- Google Fonts, Material Icons
+- Responsive layout using Flexbox & Grid
+
+---
+
+## 🧩 How to Use
+
+1. **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/e-bus-management.git
-cd e-bus-management
-Replace Firebase config in firebase/firebase-config.js with your own project settings.
+git clone https://github.com/Saumik016/E-Bus-Management-System.git
+cd E-Bus-Management-System
+```
 
-Open index.html or admin.html in your browser using a live server.
+2. **Configure Firebase**
+Replace content in `firebase/firebase-config.js` with your Firebase project details.
 
-Use the admin panel to manage buses and search interface for passengers.
+3. **Run Locally**
+Open `index.html` and `admin.html` in a browser (or use Live Server)
 
-⚙️ Firebase Features
-Firestore Database to store buses
+4. **Extend**
+Add new features like bookings, authentication, or real-time seat availability.
 
-Firebase Hosting (optional for deployment)
+---
 
-Authentication (optional for login setup)
+## 🔐 Firebase Config Sample
 
-👨‍💻 Author
-Saumik Ambade
-🎓 Final Year B.Tech CSE Student
-📧 saumikambade2@gmail.com 
+```js
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "your-app.firebaseapp.com",
+  projectId: "your-app",
+  storageBucket: "your-app.appspot.com",
+  messagingSenderId: "SENDER_ID",
+  appId: "APP_ID"
+};
+```
 
-📜 License
-This project is licensed under the MIT License. Use and customize freely.
+---
 
-🌟 Support
-If you like this project, please give it a ⭐ on GitHub!
+## ✍️ Author
+
+**Saumik Ambade**  
+🎓 Final Year B.Tech CSE Student  
+📧 [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+## 📜 License
+
+MIT License. Free to use, modify and distribute.
+
+---
+
+## ⭐ Support
+
+If you liked this project, leave a ⭐ on the repo and share it with others!
+ng README_EBUS.md…]()
